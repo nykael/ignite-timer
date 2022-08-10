@@ -3,10 +3,8 @@ import styled from 'styled-components'
 export const HistoryContainer = styled.main`
   flex: 1;
   padding: 3.5rem;
-
   display: flex;
   flex-direction: column;
-
   h1 {
     font-size: 1.5rem;
     color: ${(props) => props.theme['gray-100']};
@@ -68,13 +66,11 @@ export const Status = styled.span<StatusProps>`
   display: flex;
   align-items: center;
   gap: 0.5rem;
-
   &::before {
     content: '';
     width: 0.5rem;
     height: 0.5rem;
-    border-radius: 50%;
-    background-color: ${(props) =>
-      props.theme[STATUS_COLORS[props.statusColor]]};
+    border-radius: 9999px;
+    background: ${(props) => props.theme[STATUS_COLORS[props.statusColor]]};
   }
 `
